@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+}
+
+
+.h2 {
+    text-align: center;
+}
+
+
+
+
+.wikipedia-logo {
+    position: relative;
+    top: 100px;
+    left: 300px;
+    background-color:white;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* LANGUAGES */
+
+.languages {
+    width: 850px;
+    height: 470px;
+    margin: auto;
+    position: relative;
+}
+
+.lang {
+    position: absolute;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.lang h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.lang p {
+    color:black;
+    font-size: 15px;
+}
+
+/* Language positions */
+
+.english {
+    top: 20px;
+    left: 120px;
+}
+
+.japanese {
+    top: 20px;
+    right: 110px;
+}
+
+.german {
+    top: 105px;
+    left: 40px;
+}
+
+.russian {
+    top: 105px;
+    right: 30px;
+}
+
+.french {
+    top: 210px;
+    left: 20px;
+}
+
+.spanish {
+    top: 210px;
+    right: 20px;
+}
+
+.chinese {
+    top: 315px;
+    left: 40px;
+}
+
+.italian {
+    top: 315px;
+    right: 40px;
+}
+
+.polish {
+    top: 395px;
+    left: 130px;
+}
+
+.portuguese {
+    top: 395px;
+    right: 120px;
+}
+
+/* WIKIPEDIA BALL */
+
+.wiki-ball {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background: white;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.wiki-ball span {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 45px;
+    color: #777;
+}
+
+.wiki-ball span:nth-child(1) {
+    top: 70px;
+    left: 130px;
+}
+
+.wiki-ball span:nth-child(2) {
+    top: 120px;
+    left: 70px;
+}
+
+.wiki-ball span:nth-child(3) {
+    top: 155px;
+    right: 55px;
+}
+
+.wiki-ball span:nth-child(4) {
+    bottom: 60px;
+    left: 125px;
+}
+
+.wiki-ball span:nth-child(5) {
+    bottom: 85px;
+    right: 85px;
+}
+
+/* SEARCH */
+
+.search-box {
+    width: 760px;
+    height: 58px;
+    border: 2px solid #aaa;
+    margin: 15px auto;
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search-box select {
+    width: 80px;
+    background: #050505;
+    color: white;
+    border: none;
+    border-left: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.search-box button {
+    width: 65px;
+    border: none;
+    background: #168de2;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* LANGUAGE BUTTON */
+
+.language-button {
+    display: block;
+    margin: 25px auto 40px;
+    padding: 15px 25px;
+    background: #171717;
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.language-button span {
+    margin-left: 20px;
+}
+
+/* LINE */
+
+.line {
+    height: 1px;
+    background: #777;
+    width: 90%;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    width: 90%;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 35px;
+}
+
+/* ABOUT */
+
+.footer-about {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footer-icon {
+    font-size: 45px;
+}
+
+/* DOWNLOAD */
+
+.download {
+    display: flex;
+    gap: 15px;
+    background: #252525;
+    padding: 15px;
+}
+
+.app-icon {
+    font-size: 35px;
+    background: white;
+    color: black;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.download h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.download p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.download button {
+    background: #111;
+    color: white;
+    border: 1px solid #777;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project span {
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.project b {
+    font-size: 14px;
+}
+
+/* BOTTOM */
+
+.bottom {
+    border-top: 1px solid #555;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .languages {
+        width: 100%;
+        transform: scale(0.8);
+    }
+
+    .search-box {
+        width: 80%;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .logo h1 {
+        font-size: 35px;
+    }
+
+    .languages {
+        transform: scale(0.65);
+        margin-top: -60px;
+        margin-bottom: -50px;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
